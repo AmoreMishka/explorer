@@ -1,0 +1,19 @@
+html, body{
+  height: 100%;
+}
+body{
+  @extend %Montserrat-400;
+  display: flex;
+  flex-direction: column;
+  color: $main;
+}
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.wrapper{
+  background-image: url(../images/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

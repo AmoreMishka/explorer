@@ -1,0 +1,32 @@
+.header {
+  padding-top: 60px;
+  margin: 0 auto;
+  max-width: 570px;
+
+  &__logo-img {
+    margin: 0 auto;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+.menu {
+  &__item-link {
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 1.3px;
+    color: $main;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      border-bottom: 2px solid rgba(255,255,255, 0.3);
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.article {
+  &__top {
+    height: 330px;
+    padding-left: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 45px;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+  }
+
+  &__author-name {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    font-size: 18px;
+    line-height: 19px;
+  }
+  &__date{
+    @extend %Lato-400;
+    font-size: 13px;
+    line-height: 19px;
+  }
+  &__title{
+    font-size: 28px;
+    line-height: 35px;
+    max-width: 470px;
+  }
+  &__bottom{
+    height: 190px;
+    background-color: $main;
+    padding: 35px 60px 45px;
+  }
+  &__text{
+    color: $text;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    @extend %Lato-400;
+  }
+  &__link{
+    font-size: 17px;
+    line-height: 30px;
+    color: $article;
+  }
+}
+.archieve{
+  background-color: #f1f1f1;
+  height: 210px;
+  text-align: center;
+  margin-bottom: 100px;
+  &__title{
+    font-size: 30px;
+    line-height: 36px;
+    color: $text;
+    padding-top: 50px;
+    margin-bottom: 30px;
+  }
+  &__link{
+    padding: 20px 30px;
+    background-color: $article;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: $main;
+    font-style: 10px;
+    line-height: 30px;
+  }
+}

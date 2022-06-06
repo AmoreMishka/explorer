@@ -1,0 +1,36 @@
+.footer{
+  background-color: $footer;
+  &__inner{
+    font-size: 14px;
+    line-height: 28px;
+    @extend %Lato-400;
+    text-align: center;
+    padding: 55px 0 45px;
+    a{
+      color:$article;
+    }
+  }
+  &__top{
+    @media(max-width:600px){
+      flex-wrap: wrap;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    span{
+      margin-right: 10px;
+    }
+  }
+  &__bottom{
+    @media(max-width:600px){
+      flex-wrap: wrap;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    a{
+      margin-right: 10px;
+      @media(max-width:400px){
+        margin-right: 0;
+      }
+    }
+  }
+}
